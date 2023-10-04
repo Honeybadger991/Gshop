@@ -1,0 +1,2746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Gshop</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231004111232">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+	<div class="overlay" data-overlay></div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top">
+				<div class="header-container">
+					<ul class="header-social">
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+									<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<div class="header-news"> <span>FREE SHIPPING</span> THIS WEEK ORDER OVER - $55</div>
+					<div class="header-actions">
+						<select name="currency">
+							<option value="usd">USD &dollar;</option>
+							<option value="eur">EURO &euro;</option>
+						</select>
+						<select class="header-select" name="language">
+							<option value="en-US">English</option>
+							<option value="en-ES">Español</option>
+							<option value="fr">Français</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="header-container">
+					<div class="header-logo">
+						<a href="#"><img class="header-logo-img" src="img/logo/logo.svg" alt="logo"></a>
+					</div>
+					<div class="header-search">
+						<input type="text" name="search" class="header-search-input" placeholder="Enter your product name...">
+						<button class="header-search-button">
+							<svg xmlns="http://www.w3.org/2000/svg" class="header-search-icon" viewBox="0 0 512 512">
+								<path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke-miterlimit="10" stroke-width="32" />
+								<path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448" />
+							</svg>
+						</button>
+					</div>
+					<div class="header-user-actions">
+						<button class="action-btn">
+							<img src="img/icons/person-outline.svg" alt="person-icon">
+						</button>
+						<button class="action-btn">
+							<img src="img/icons/heart-outline.svg" alt="heart-icon">
+							<span class="action-btn-count">0</span>
+						</button>
+						<button class="action-btn">
+							<img src="img/icons/bag-handle-outline.svg" alt="bag-icon">
+							<span class="action-btn-count">0</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu-container">
+				<ul class="header-navigation">
+					<li class="menu-category">
+						<a href="#" class="menu-title">HOME</a>
+					</li>
+					<li class="menu-category">
+						<a href="#" class="menu-title">CATEGORIES</a>
+						<div class="dropdown-wrapper">
+							<ul class="dropdown-list">
+								<li class="dropdown-list-title">
+									<a href="#">Electronics</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Desktop</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Laptop</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Camera</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Tablet</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Headphone</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">
+										<picture><source srcset="img/electronics-banner-1.webp" type="image/webp"><img class="dropdown-list-img" src="img/electronics-banner-1.jpg" alt="headphone collection"></picture>
+									</a>
+								</li>
+							</ul>
+							<ul class="dropdown-list">
+								<li class="dropdown-list-title">
+									<a href="#">Men's</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Formal</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Casual</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Sports</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Jacket</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Sunglasses</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">
+										<picture><source srcset="img/mens-banner.webp" type="image/webp"><img class="dropdown-list-img" src="img/mens-banner.jpg" alt="men's fashion"></picture>
+									</a>
+								</li>
+							</ul>
+							<ul class="dropdown-list">
+								<li class="dropdown-list-title">
+									<a href="#">Women's</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Formal</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Casual</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Perfume</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Cosmetics</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Bags</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">
+										<picture><source srcset="img/womens-banner.webp" type="image/webp"><img class="dropdown-list-img" src="img/womens-banner.jpg" alt="women's fashion"></picture>
+									</a>
+								</li>
+							</ul>
+							<ul class="dropdown-list">
+								<li class="dropdown-list-title">
+									<a href="#">Electronics</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Smart Watch</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Smart TV</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Keyboard</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Mouse</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">Microphone</a>
+								</li>
+								<li class="dropdown-list-item">
+									<a href="#">
+										<picture><source srcset="img/electronics-banner-2.webp" type="image/webp"><img class="dropdown-list-img" src="img/electronics-banner-2.jpg" alt="mouse collection"></picture>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu-category">
+						<a href="#" class="menu-title">MEN'S</a>
+						<ul class="dropdown-variants">
+							<li class="dropdown-variant">
+								<a href="#">Shirt</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Shorts & Jeans</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Safety Shoes</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Wallet</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-category">
+						<a href="#" class="menu-title">WOMEN'S</a>
+						<ul class="dropdown-variants">
+							<li class="dropdown-variant">
+								<a href="#">Dress & Frock</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Earrings</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Necklace</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Makeup Kit</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-category">
+						<a href="#" class="menu-title">JEWELRY</a>
+						<ul class="dropdown-variants">
+							<li class="dropdown-variant">
+								<a href="#">Earrings</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Couple Rings</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Necklace</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Bracelets</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-category">
+						<a href="#" class="menu-title">PERFUME</a>
+						<ul class="dropdown-variants">
+							<li class="dropdown-variant">
+								<a href="#">Clothes Perfume</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Deodorant</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Flower Fragrance</a>
+							</li>
+							<li class="dropdown-variant">
+								<a href="#">Air Freshener</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-category">
+						<a href="#" class="menu-title">BLOG</a>
+					</li>
+					<li class="menu-category">
+						<a href="#" class="menu-title">HOT OFFERS</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mobile-bottom-navigation">
+				<button class="action-btn" data-mobile-menu-open-btn>
+					<img src="img/icons/menu-outline.svg" alt="menu-icon">
+				</button>
+				<button class="action-btn">
+					<img src="img/icons/heart-outline.svg" alt="heart-icon">
+					<span class="action-btn-count">0</span>
+				</button>
+				<button class="action-btn">
+					<img src="img/icons/home-outline.svg" alt="home-icon">
+				</button>
+				<button class="action-btn">
+					<img src="img/icons/bag-handle-outline.svg" alt="bag-icon">
+					<span class="action-btn-count">0</span>
+				</button>
+				<button class="action-btn" data-mobile-menu-open-btn>
+					<img src="img/icons/grid-outline.svg" alt="menu-icon">
+				</button>
+			</div>
+			<div class="mobile-navigation-menu" data-mobile-menu>
+				<div class="mobile-menu-top">
+					<h2 class="mobile-menu-title">Menu</h2>
+					<button class="mobile-menu-close" data-mobile-menu-close-btn>🗙</button>
+				</div>
+				<ul class="mobile-menu-categories">
+					<li class="mobile-menu-category-item">
+						<button class="mobile-menu-category">
+							<a href="#" class="mobile-menu-category-name">HOME</a>
+						</button>
+					</li>
+					<li class="mobile-menu-category-item">
+						<button class="mobile-menu-category" data-accordion-btn>
+							<p class="mobile-menu-category-name">MAN'S</p>
+							<div class="mobile-menu-category-nav">
+								<div class="mobile-menu-category-open">+</div>
+								<div class="mobile-menu-category-close">-</div>
+							</div>
+						</button>
+						<ul class="mobile-menu-dropdown-variants" data-accordion>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Shirt</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Shorts & Jeans</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Safety Shoes</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Wallet</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-menu-category-item">
+						<button class="mobile-menu-category" data-accordion-btn>
+							<p class="mobile-menu-category-name">WOMEN'S</p>
+							<div class="mobile-menu-category-nav">
+								<div class="mobile-menu-category-open">+</div>
+								<div class="mobile-menu-category-close">-</div>
+							</div>
+						</button>
+						<ul class="mobile-menu-dropdown-variants" data-accordion>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Dress & Frock</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Earrings</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Necklace</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Makeup Kit</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-menu-category-item">
+						<button class="mobile-menu-category" data-accordion-btn>
+							<p class="mobile-menu-category-name">JEWELRY</p>
+							<div class="mobile-menu-category-nav">
+								<div class="mobile-menu-category-open">+</div>
+								<div class="mobile-menu-category-close">-</div>
+							</div>
+						</button>
+						<ul class="mobile-menu-dropdown-variants" data-accordion>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Earrings</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Couple Rings</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Necklace</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Bracelets</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-menu-category-item">
+						<button class="mobile-menu-category" data-accordion-btn>
+							<p class="mobile-menu-category-name">PERFUME</p>
+							<div class="mobile-menu-category-nav">
+								<div class="mobile-menu-category-open">+</div>
+								<div class="mobile-menu-category-close">-</div>
+							</div>
+						</button>
+						<ul class="mobile-menu-dropdown-variants" data-accordion>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Clothes Perfume</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Deodorant</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Flower Fragrance</a>
+							</li>
+							<li class="mobile-menu-dropdown-variant">
+								<a href="#">Air Freshener</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-menu-category-item">
+						<button class="mobile-menu-category">BLOG</button>
+					</li>
+					<li class="mobile-menu-category-item">
+						<button class="mobile-menu-category">HOT OFFERS</button>
+					</li>
+				</ul>
+				<div class="mobile-menu-bottom">
+					<ul class="mobile-menu-categories">
+						<li class="mobile-menu-category-item">
+							<button class="mobile-menu-category nb" data-accordion-btn>
+								<p class="mobile-menu-category-name">Language</p>
+								<div class="mobile-menu-category-nav">
+									<svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-category-open" viewBox="0 0 512 512">
+										<path d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z" />
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-category-close" viewBox="0 0 512 512">
+										<path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" />
+									</svg>
+								</div>
+							</button>
+							<ul class="mobile-menu-dropdown-variants variants-bottom" data-accordion>
+								<li class="mobile-menu-dropdown-variant variant-bottom">
+									<a href="#">English</a>
+								</li>
+								<li class="mobile-menu-dropdown-variant variant-bottom">
+									<a href="#">Espa&ntilde;ol</a>
+								</li>
+								<li class="mobile-menu-dropdown-variant variant-bottom">
+									<a href="#">Fren&ccedil;h</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobile-menu-category-item">
+							<button class="mobile-menu-category nb" data-accordion-btn>
+								<p class="mobile-menu-category-name">Currency</p>
+								<div class="mobile-menu-category-nav">
+									<svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-category-open" viewBox="0 0 512 512">
+										<path d="M321.94 98L158.82 237.78a24 24 0 000 36.44L321.94 414c15.57 13.34 39.62 2.28 39.62-18.22v-279.6c0-20.5-24.05-31.56-39.62-18.18z" />
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-category-close" viewBox="0 0 512 512">
+										<path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" />
+									</svg>
+								</div>
+							</button>
+							<ul class="mobile-menu-dropdown-variants variants-bottom" data-accordion>
+								<li class="mobile-menu-dropdown-variant variant-bottom">
+									<a href="#">USD &dollar;</a>
+								</li>
+								<li class="mobile-menu-dropdown-variant variant-bottom">
+									<a href="#">EURO &euro;</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="header-social mobile">
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+									<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" class="header-social-icon" viewBox="0 0 512 512">
+									<path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="modal" data-modal>
+				<div class="modal-overlay" data-modal-overlay></div>
+				<div class="modal-content">
+					<button class="modal-close-btn" data-modal-close>🗙</button>
+					<div class="modal-content-img">
+						<picture><source srcset="img/newsletter.webp" type="image/webp"><img src="img/newsletter.png" alt="newsletter-img"></picture>
+					</div>
+					<div class="modal-newsletter">
+						<form action="#">
+							<h3 class="modal-newsletter-title">Subscribe Newsletter.</h3>
+							<p class="modal-newsletter-text">Subscribe the <b>Gshop</b> to get latest products and discount update.</p>
+							<input type="email" name="email" class="modal-newsletter-email" placeholder="Email adress" required>
+							<button class="modal-newsletter-btn" type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="banner-container">
+					<div class="banner__slider swiper">
+						<div class="slider-nav">
+							<button class="banner__slider-btn-prev"><img src="img/icons/arrow-back.svg" alt="back"></button>
+							<button class="banner__slider-btn-next"><img src="img/icons/arrow-back.svg" alt="next"></button>
+						</div>
+						<div class="banner__wrapper swiper-wrapper">
+							<div class="banner__slide swiper-slide">
+								<picture><source srcset="img/banner-1.webp" type="image/webp"><img src="img/banner-1.jpg" alt="women's latest fashion sale"></picture>
+								<div class="banner-content">
+									<p class="banner-content-subtitle">Trending Item</p>
+									<h2 class="banner-content-title">WOMEN'S LATEST FASHION SALE</h2>
+									<p class="banner-content-text">starting at &dollar; <b>20</b>.00</p>
+									<a href="#" class="banner-content-btn button">SHOP NOW</a>
+								</div>
+							</div>
+							<div class="banner__slide swiper-slide">
+								<picture><source srcset="img/banner-2.webp" type="image/webp"><img src="img/banner-2.jpg" alt="modern sunglasses"></picture>
+								<div class="banner-content">
+									<p class="banner-content-subtitle">Trending Accessories</p>
+									<h2 class="banner-content-title">MODERN SUNGLASSES</h2>
+									<p class="banner-content-text">starting at &dollar; <b>15</b>.00</p>
+									<a href="#" class="banner-content-btn button">SHOP NOW</a>
+								</div>
+							</div>
+							<div class="banner__slide swiper-slide">
+								<picture><source srcset="img/banner-3.webp" type="image/webp"><img id="image-top" src="img/banner-3.jpg" alt="new fashion summer sale"></picture>
+								<div class="banner-content">
+									<p class="banner-content-subtitle">Sale Offer</p>
+									<h2 class="banner-content-title">NEW FASHION SUMMER SALE</h2>
+									<p class="banner-content-text">starting at &dollar; <b>29</b>.99</p>
+									<a href="#" class="banner-content-btn button">SHOP NOW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category">
+				<div class="category-container">
+					<button class="category__slider-btn-prev"><img src="img/icons/arrow-back.svg" alt="back"></button>
+					<div class="category__slider swiper">
+
+						<div class="category__wrapper swiper-wrapper">
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/dress.svg" alt="dress & frock">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">DRESS & FROCK</h3>
+										<p class="category-content-amount">(43)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/coat.svg" alt="winter wear">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">WINTER WEAR</h3>
+										<p class="category-content-amount">(52)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/glasses.svg" alt="glasses & lens">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">GLASSES & LENS</h3>
+										<p class="category-content-amount">(74)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/shorts.svg" alt="shorts & jeans">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">SHORTS & JEANS</h3>
+										<p class="category-content-amount">(60)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/tee.svg" alt="t-shirts">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">T-SHIRTS</h3>
+										<p class="category-content-amount">(41)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/jacket.svg" alt="jacket">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">JACKET</h3>
+										<p class="category-content-amount">(32)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/watch.svg" alt="watch">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">WATCH</h3>
+										<p class="category-content-amount">(28)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+							<div class="category__slide swiper-slide">
+								<div class="category-pic">
+									<img src="img//icons/hat.svg" alt="hat & caps">
+								</div>
+								<div class="category-content">
+									<div class="category-content-info">
+										<h3 class="category-content-title">HAT & CAPS</h3>
+										<p class="category-content-amount">(50)</p>
+									</div>
+									<a href="#" class="category-content-btn">Show All</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<button class="category__slider-btn-next"><img src="img/icons/arrow-back.svg" alt="next"></button>
+				</div>
+			</div>
+			<div class="product">
+				<div class="product-container">
+					<div class="product-side" data-mobile-menu>
+						<div class="product-sidebar">
+							<div class="sidebar-header">
+								<h2 class="sidebar-title">category</h2>
+								<button class="mobile-menu-close" data-mobile-menu-close-btn>🗙</button>
+							</div>
+							<ul class="sidebar-categories">
+								<li class="sidebar-category">
+									<button class="sidebar-category-btn" data-accordion-btn>
+										<div class="sidebar-category-info">
+											<div class="sidebar-category-img">
+												<img src="img/icons/dress.svg" alt="clothes">
+											</div>
+											<p class="sidebar-category-name">clothes</p>
+										</div>
+										<div class="sidebar-category-nav">
+											<div class="sidebar-category-open">+</div>
+											<div class="sidebar-category-close">-</div>
+										</div>
+									</button>
+									<ul class="sidebar-submenu" data-accordion>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Shirt</p>
+												<data class="sidebar-submenu-amount" value="300" title="Available Stock">300</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">shorts & jeans</p>
+												<data class="sidebar-submenu-amount" value="50" title="Available Stock">50</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">jacket</p>
+												<data class="sidebar-submenu-amount" value="48" title="Available Stock">48</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">dress & frock</p>
+												<data class="sidebar-submenu-amount" value="69" title="Available Stock">69</data>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sidebar-category">
+									<button class="sidebar-category-btn" data-accordion-btn>
+										<div class="sidebar-category-info">
+											<div class="sidebar-category-img">
+												<img src="img/icons/shoes.svg" alt="footwear">
+											</div>
+											<p class="sidebar-category-name">footwear</p>
+										</div>
+										<div class="sidebar-category-nav">
+											<div class="sidebar-category-open">+</div>
+											<div class="sidebar-category-close">-</div>
+										</div>
+									</button>
+									<ul class="sidebar-submenu" data-accordion>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Sports</p>
+												<data class="sidebar-submenu-amount" value="48" title="Available Stock">48</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Formal</p>
+												<data class="sidebar-submenu-amount" value="45" title="Available Stock">45</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Safety Shoes</p>
+												<data class="sidebar-submenu-amount" value="19" title="Available Stock">19</data>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sidebar-category">
+									<button class="sidebar-category-btn" data-accordion-btn>
+										<div class="sidebar-category-info">
+											<div class="sidebar-category-img">
+												<img src="img/icons/jewelry.svg" alt="jewelry">
+											</div>
+											<p class="sidebar-category-name">jewelry</p>
+										</div>
+										<div class="sidebar-category-nav">
+											<div class="sidebar-category-open">+</div>
+											<div class="sidebar-category-close">-</div>
+										</div>
+									</button>
+									<ul class="sidebar-submenu" data-accordion>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Earrings</p>
+												<data class="sidebar-submenu-amount" value="51" title="Available Stock">51</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Couple Rings</p>
+												<data class="sidebar-submenu-amount" value="70" title="Available Stock">70</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Necklace</p>
+												<data class="sidebar-submenu-amount" value="67" title="Available Stock">67</data>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sidebar-category">
+									<button class="sidebar-category-btn" data-accordion-btn>
+										<div class="sidebar-category-info">
+											<div class="sidebar-category-img">
+												<img src="img/icons/perfume.svg" alt="perfume">
+											</div>
+											<p class="sidebar-category-name">perfume</p>
+										</div>
+										<div class="sidebar-category-nav">
+											<div class="sidebar-category-open">+</div>
+											<div class="sidebar-category-close">-</div>
+										</div>
+									</button>
+									<ul class="sidebar-submenu" data-accordion>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Clothes Perfume</p>
+												<data class="sidebar-submenu-amount" value="38" title="Available Stock">38</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Deodorant</p>
+												<data class="sidebar-submenu-amount" value="55" title="Available Stock">55</data>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sidebar-category">
+									<button class="sidebar-category-btn" data-accordion-btn>
+										<div class="sidebar-category-info">
+											<div class="sidebar-category-img">
+												<img src="img/icons/cosmetics.svg" alt="cosmetics">
+											</div>
+											<p class="sidebar-category-name">cosmetics</p>
+										</div>
+										<div class="sidebar-category-nav">
+											<div class="sidebar-category-open">+</div>
+											<div class="sidebar-category-close">-</div>
+										</div>
+									</button>
+									<ul class="sidebar-submenu" data-accordion>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Shampoo</p>
+												<data class="sidebar-submenu-amount" value="62" title="Available Stock">62</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Sunscreen</p>
+												<data class="sidebar-submenu-amount" value="44" title="Available Stock">44</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Body Wash</p>
+												<data class="sidebar-submenu-amount" value="80" title="Available Stock">80</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Makeup Kit</p>
+												<data class="sidebar-submenu-amount" value="25" title="Available Stock">25</data>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sidebar-category">
+									<button class="sidebar-category-btn" data-accordion-btn>
+										<div class="sidebar-category-info">
+											<div class="sidebar-category-img">
+												<img src="img/icons/glasses.svg" alt="glasses">
+											</div>
+											<p class="sidebar-category-name">glasses</p>
+										</div>
+										<div class="sidebar-category-nav">
+											<div class="sidebar-category-open">+</div>
+											<div class="sidebar-category-close">-</div>
+										</div>
+									</button>
+									<ul class="sidebar-submenu" data-accordion>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Sunglasses</p>
+												<data class="sidebar-submenu-amount" value="47" title="Available Stock">47</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Lenses</p>
+												<data class="sidebar-submenu-amount" value="39" title="Available Stock">39</data>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sidebar-category">
+									<button class="sidebar-category-btn" data-accordion-btn>
+										<div class="sidebar-category-info">
+											<div class="sidebar-category-img">
+												<img src="img/icons/bag.svg" alt="bags">
+											</div>
+											<p class="sidebar-category-name">bags</p>
+										</div>
+										<div class="sidebar-category-nav">
+											<div class="sidebar-category-open">+</div>
+											<div class="sidebar-category-close">-</div>
+										</div>
+									</button>
+									<ul class="sidebar-submenu" data-accordion>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Shopping Bag</p>
+												<data class="sidebar-submenu-amount" value="82" title="Available Stock">82</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Gym Backpack</p>
+												<data class="sidebar-submenu-amount" value="34" title="Available Stock">34</data>
+											</a>
+										</li>
+										<li class="sidebar-submenu-item">
+											<a href="#" class="sidebar-submenu-info">
+												<p class="sidebar-submenu-name">Wallet</p>
+												<data class="sidebar-submenu-amount" value="61" title="Available Stock">61</data>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="product-bestsellers">
+							<h2 class="bestsellers-title">BEST SELLERS</h2>
+							<ul class="bestsellers-list">
+								<li class="bestsellers-item">
+									<a href="#" class="bestsellers-item-img">
+										<picture><source srcset="img/products/1.webp" type="image/webp"><img src="img/products/1.jpg" alt="men's hoodies t-shirt"></picture>
+									</a>
+									<div class="bestsellers-item-info">
+										<a href="#">
+											<h4 class="bestsellers-item-name">baby fabric shoes</h4>
+										</a>
+										<div class="bestsellers-item-rating">
+											<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="starinit" viewBox="0 0 512 512">
+												<symbol id="star" viewBox="0 0 512 512">
+													<path id="star" fill="#F9883E" d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+												</symbol>
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+										</div>
+										<div class="bestsellers-item-price">
+											<p class="bestsellers-item-price-new">$4.00</p>
+											<p class="bestsellers-item-price-old">$5.00</p>
+										</div>
+									</div>
+								</li>
+								<li class="bestsellers-item">
+									<a href="#" class="bestsellers-item-img">
+										<picture><source srcset="img/products/2.webp" type="image/webp"><img src="img/products/2.jpg" alt="men's hoodies t-shirt"></picture>
+									</a>
+									<div class="bestsellers-item-info">
+										<a href="#">
+											<h4 class="bestsellers-item-name">men's hoodies t-shirt</h4>
+										</a>
+										<div class="bestsellers-item-rating">
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="starinit" viewBox="0 0 512 512">
+												<symbol id="star-half" viewBox="0 0 512 512">
+													<path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z" fill="none" stroke="#F9883E" stroke-linejoin="round" stroke-width="32" />
+													<path fill="#F9883E" d="M256 48v316L118 464l54-160-140-96h172l52-160z" />
+												</symbol>
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-half">
+												<use href="#star-half" />
+											</svg>
+										</div>
+										<div class="bestsellers-item-price">
+											<p class="bestsellers-item-price-new">$7.00</p>
+											<p class="bestsellers-item-price-old">$17.00</p>
+										</div>
+									</div>
+								</li>
+								<li class="bestsellers-item">
+									<a href="#" class="bestsellers-item-img">
+										<picture><source srcset="img/products/3.webp" type="image/webp"><img src="img/products/3.jpg" alt="men's hoodies t-shirt"></picture>
+									</a>
+									<div class="bestsellers-item-info">
+										<a href="#">
+											<h4 class="bestsellers-item-name">girls t-shirt</h4>
+										</a>
+										<div class="bestsellers-item-rating">
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-half">
+												<use href="#star-half" />
+											</svg>
+										</div>
+										<div class="bestsellers-item-price">
+											<p class="bestsellers-item-price-new">$3.00</p>
+											<p class="bestsellers-item-price-old">$5.00</p>
+										</div>
+									</div>
+								</li>
+								<li class="bestsellers-item">
+									<a href="#" class="bestsellers-item-img">
+										<picture><source srcset="img/products/4.webp" type="image/webp"><img src="img/products/4.jpg" alt="men's hoodies t-shirt"></picture>
+									</a>
+									<div class="bestsellers-item-info">
+										<a href="#">
+											<h4 class="bestsellers-item-name">woolen hat for men</h4>
+										</a>
+										<div class="bestsellers-item-rating">
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+											<svg class="bestsellers-star bestsellers-star-full">
+												<use href="#star" />
+											</svg>
+										</div>
+										<div class="bestsellers-item-price">
+											<p class="bestsellers-item-price-new">$12.00</p>
+											<p class="bestsellers-item-price-old">$15.00</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product-main">
+						<div class="product-minimal">
+							<div class="product-showcase">
+								<h2 class="showcase-name title">New Arrivals</h2>
+								<div class="showcase__slider showcase__slider-1 swiper">
+									<div class="showcase-slider-nav">
+										<button class="showcase__slider-1-btn-prev showcase__slider-btn-prev"><img src="img/icons/arrow-back.svg" alt="back"></button>
+										<button class="showcase__slider-1-btn-next showcase__slider-btn-next"><img src="img/icons/arrow-back.svg" alt="next"></button>
+									</div>
+									<div class="showcase__wrapper showcase__wrapper-1 swiper-wrapper">
+										<div class="showcase__slide showcase__slide-1 swiper-slide">
+											<div class="showcase-block">
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/clothes-1.webp" type="image/webp"><img src="img/products/clothes-1.jpg" alt="relaxed short full sleeve t-shirt"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">relaxed short full sleeve t-shirt</h4>
+														</a>
+														<a href="#" class="showcase-category">Clothes</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$12.00</p>
+															<p class="showcase-price-old">$45.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/clothes-2.webp" type="image/webp"><img src="img/products/clothes-2.jpg" alt="girls pink embro design top"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">girls pink embro design top</h4>
+														</a>
+														<a href="#" class="showcase-category">Clothes</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$9.00</p>
+															<p class="showcase-price-old">$61.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/clothes-3.webp" type="image/webp"><img src="img/products/clothes-3.jpg" alt="black floral wrap midi skirt"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">black floral wrap midi skirt</h4>
+														</a>
+														<a href="#" class="showcase-category">Clothes</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$25.00</p>
+															<p class="showcase-price-old">$76.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/shirt-1.webp" type="image/webp"><img src="img/products/shirt-1.jpg" alt="pure garment dyed cotton shirt"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">pure garment dyed cotton shirt</h4>
+														</a>
+														<a href="#" class="showcase-category">Mens Fashion</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$31.00</p>
+															<p class="showcase-price-old">$68.00</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="showcase__slide showcase__slide-1 swiper-slide">
+											<div class="showcase-block">
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/jacket-5.webp" type="image/webp"><img src="img/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">men yarn fleece full-zip jacket</h4>
+														</a>
+														<a href="#" class="showcase-category">Winter Wear</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$22.00</p>
+															<p class="showcase-price-old">$61.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/jacket-1.webp" type="image/webp"><img src="img/products/jacket-1.jpg" alt="mens winter leathers jackets"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">mens winter leathers jackets</h4>
+														</a>
+														<a href="#" class="showcase-category">Winter Wear</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$22.00</p>
+															<p class="showcase-price-old">$40.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/jacket-3.webp" type="image/webp"><img src="img/products/jacket-3.jpg" alt="mens winter leathers jackets"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">mens winter leathers jackets</h4>
+														</a>
+														<a href="#" class="showcase-category">Jackets</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$24.00</p>
+															<p class="showcase-price-old">$51.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/shorts-1.webp" type="image/webp"><img src="img/products/shorts-1.jpg" alt="better basics french terry sweatshorts"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">better basics french terry sweatshorts</h4>
+														</a>
+														<a href="#" class="showcase-category">Shorts</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$9.00</p>
+															<p class="showcase-price-old">$20.00</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-showcase">
+								<h2 class="showcase-name title">Trending</h2>
+								<div class="showcase__slider showcase__slider-2 swiper">
+									<div class="showcase-slider-nav">
+										<button class="showcase__slider-2-btn-prev showcase__slider-btn-prev"><img src="img/icons/arrow-back.svg" alt="back"></button>
+										<button class="showcase__slider-2-btn-next showcase__slider-btn-next"><img src="img/icons/arrow-back.svg" alt="next"></button>
+									</div>
+									<div class="showcase__wrapper swiper-wrapper">
+										<div class="showcase__slide showcase__slide-2 swiper-slide">
+											<div class="showcase-block">
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/sports-1.webp" type="image/webp"><img src="img/products/sports-1.jpg" alt="running & trekking shoes - white"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">running & trekking shoes - white</h4>
+														</a>
+														<a href="#" class="showcase-category">Sports</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$18.00</p>
+															<p class="showcase-price-old">$47.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/sports-2.webp" type="image/webp"><img src="img/products/sports-2.jpg" alt="trekking & running shoes - black"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">trekking & running shoes - black</h4>
+														</a>
+														<a href="#" class="showcase-category">Sports</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$34.00</p>
+															<p class="showcase-price-old">$70.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/party-wear-1.webp" type="image/webp"><img src="img/products/party-wear-1.jpg" alt="womens party wear shoes"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">womens party wear shoes</h4>
+														</a>
+														<a href="#" class="showcase-category">Party Wear</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$42.00</p>
+															<p class="showcase-price-old">$94.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/sports-3.webp" type="image/webp"><img src="img/products/sports-3.jpg" alt="sports claw women's shoes"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">sports claw women's shoes</h4>
+														</a>
+														<a href="#" class="showcase-category">Sports</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$50.00</p>
+															<p class="showcase-price-old">$66.00</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="showcase__slide showcase__slide-2 swiper-slide">
+											<div class="showcase-block">
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/sports-6.webp" type="image/webp"><img src="img/products/sports-6.jpg" alt="air tekking shoes - white"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">air tekking shoes - white</h4>
+														</a>
+														<a href="#" class="showcase-category">Sports</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$52.00</p>
+															<p class="showcase-price-old">$65.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/shoe-3.webp" type="image/webp"><img src="img/products/shoe-3.jpg" alt="Boot With Suede Detail"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">Boot With Suede Detail</h4>
+														</a>
+														<a href="#" class="showcase-category">Boots</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$20.00</p>
+															<p class="showcase-price-old">$35.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/shoe-1.webp" type="image/webp"><img src="img/products/shoe-1.jpg" alt="men's leather formal wear shoes"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">men's leather formal wear shoes</h4>
+														</a>
+														<a href="#" class="showcase-category">Formal</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$65.00</p>
+															<p class="showcase-price-old">$78.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/shoe-2.webp" type="image/webp"><img src="img/products/shoe-2.jpg" alt="casual men's brown shoes"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">casual men's brown shoes</h4>
+														</a>
+														<a href="#" class="showcase-category">Casual</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$49.00</p>
+															<p class="showcase-price-old">$55.00</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-showcase">
+								<h2 class="showcase-name title">Top Rated</h2>
+								<div class="showcase__slider showcase__slider-3 swiper">
+									<div class="showcase-slider-nav">
+										<button class="showcase__slider-3-btn-prev showcase__slider-btn-prev"><img src="img/icons/arrow-back.svg" alt="back"></button>
+										<button class="showcase__slider-3-btn-next showcase__slider-btn-next"><img src="img/icons/arrow-back.svg" alt="next"></button>
+									</div>
+									<div class="showcase__wrapper showcase__wrapper-3 swiper-wrapper">
+										<div class="showcase__slide showcase__slide-3 swiper-slide">
+											<div class="showcase-block">
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/watch-3.webp" type="image/webp"><img src="img/products/watch-3.jpg" alt="pocket watch leather pouch"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">pocket watch leather pouch</h4>
+														</a>
+														<a href="#" class="showcase-category">Watches</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$34.00</p>
+															<p class="showcase-price-old">$50.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/jewellery-3.webp" type="image/webp"><img src="img/products/jewellery-3.jpg" alt="silver deer heart necklace"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">silver deer heart necklace</h4>
+														</a>
+														<a href="#" class="showcase-category">Jewellery</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$34.00</p>
+															<p class="showcase-price-old">$71.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/perfume.webp" type="image/webp"><img src="img/products/perfume.jpg" alt="titan 100 ml womens perfume"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">titan 100 ml womens perfume</h4>
+														</a>
+														<a href="#" class="showcase-category">Perfume</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$15.00</p>
+															<p class="showcase-price-old">$46.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/belt.webp" type="image/webp"><img src="img/products/belt.jpg" alt="men's leather reversible belt"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">men's leather reversible belt</h4>
+														</a>
+														<a href="#" class="showcase-category">Belt</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$11.00</p>
+															<p class="showcase-price-old">$24.00</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="showcase__slide showcase__slide-3 swiper-slide">
+											<div class="showcase-block">
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/jewellery-2.webp" type="image/webp"><img src="img/products/jewellery-2.jpg" alt="platinum zircon classic ring"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">platinum zircon classic ring</h4>
+														</a>
+														<a href="#" class="showcase-category">Jewellery</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$62.00</p>
+															<p class="showcase-price-old">$71.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/watch-1.webp" type="image/webp"><img src="img/products/watch-1.jpg" alt="smart watch vital plus"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">smart watch vital plus</h4>
+														</a>
+														<a href="#" class="showcase-category">Watches</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$52.00</p>
+															<p class="showcase-price-old">$70.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/shampoo.webp" type="image/webp"><img src="img/products/shampoo.jpg" alt="shampoo conditioner packs"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">shampoo conditioner packs</h4>
+														</a>
+														<a href="#" class="showcase-category">Cosmetics</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$14.00</p>
+															<p class="showcase-price-old">$27.00</p>
+														</div>
+													</div>
+												</div>
+												<div class="showcase-item">
+													<a href="#" class="showcase-img">
+														<picture><source srcset="img/products/jewellery-3.webp" type="image/webp"><img src="img/products/jewellery-3.jpg" alt="rose gold peacock earrings"></picture>
+													</a>
+													<div class="showcase-info">
+														<a href="#">
+															<h4 class="showcase-title">rose gold peacock earrings</h4>
+														</a>
+														<a href="#" class="showcase-category">Jewellery</a>
+														<div class="showcase-price">
+															<p class="showcase-price-new">$19.00</p>
+															<p class="showcase-price-old">$30.00</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-featured">
+							<h2 class="featured-title title">Deal Of The Day</h2>
+							<div class="featured__slider swiper">
+								<div class="featured__wrapper swiper-wrapper">
+									<div class="featured__slide swiper-slide">
+										<div class="featured-item">
+											<div class="featured-item-img">
+												<picture><source srcset="img/products/shampoo.webp" type="image/webp"><img src="img/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs"></picture>
+											</div>
+											<div class="featured-item-info">
+												<div class="featured-item-rating">
+													<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="starinit" viewBox="0 0 512 512">
+														<symbol id="star-empty" viewBox="0 0 512 512">
+															<path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z" fill="none" stroke="#F9883E" stroke-linejoin="round" stroke-width="32" />
+														</symbol>
+													</svg>
+													<svg class="featured-star">
+														<use href="#star" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star-empty" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star-empty" />
+													</svg>
+												</div>
+												<a href="#">
+													<h3 class="featured-item-name">shampoo, conditioner & facewash packs</h3>
+												</a>
+												<p class="featured-item-text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</p>
+												<div class="featured-item-price">
+													<p class="featured-item-price-new">$150.00</p>
+													<p class="featured-item-price-old">$200.00</p>
+												</div>
+												<button class="featured-item-btn button">ADD TO CART</button>
+												<div class="featured-item-status">
+													<div class="featured-item-status-text">
+														<p class="featured-item-status-sold">ALREADY SOLD: <b>20</b></p>
+														<p class="featured-item-status-available">AVAILABLE: <b>40</b></p>
+													</div>
+													<div class="featured-item-status-bar"></div>
+												</div>
+												<div class="featured-item-countdown">
+													<p class="featured-item-countdown-desc">HURRY UP! OFFER ENDS IN:</p>
+													<div class="featured-item-countdown-box">
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">364</p>
+															<p class="featured-item-countdown-text">Days</p>
+														</div>
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">24</p>
+															<p class="featured-item-countdown-text">Hours</p>
+														</div>
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">59</p>
+															<p class="featured-item-countdown-text">Minutes</p>
+														</div>
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">59</p>
+															<p class="featured-item-countdown-text">Seconds</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide swiper-slide">
+										<div class="featured-item">
+											<div class="featured-item-img">
+												<picture><source srcset="img/products/jewellery-1.webp" type="image/webp"><img src="img/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring"></picture>
+											</div>
+											<div class="featured-item-info">
+												<div class="featured-item-rating">
+													<svg class="featured-star">
+														<use href="#star" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star-half" />
+													</svg>
+													<svg class="featured-star">
+														<use href="#star-empty" />
+													</svg>
+												</div>
+												<a href="#">
+													<h3 class="featured-item-name">Rose Gold diamonds Earring</h3>
+												</a>
+												<p class="featured-item-text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</p>
+												<div class="featured-item-price">
+													<p class="featured-item-price-new">$1950.00</p>
+													<p class="featured-item-price-old">$2100.00</p>
+												</div>
+												<button class="featured-item-btn button">ADD TO CART</button>
+												<div class="featured-item-status">
+													<div class="featured-item-status-text">
+														<p class="featured-item-status-sold">ALREADY SOLD: <b>18</b></p>
+														<p class="featured-item-status-available">AVAILABLE: <b>54</b></p>
+													</div>
+													<div class="featured-item-status-bar"></div>
+												</div>
+												<div class="featured-item-countdown">
+													<p class="featured-item-countdown-desc">HURRY UP! OFFER ENDS IN:</p>
+													<div class="featured-item-countdown-box">
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">364</p>
+															<p class="featured-item-countdown-text">Days</p>
+														</div>
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">24</p>
+															<p class="featured-item-countdown-text">Hours</p>
+														</div>
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">59</p>
+															<p class="featured-item-countdown-text">Minutes</p>
+														</div>
+														<div class="featured-item-countdown-item">
+															<p class="featured-item-countdown-number">59</p>
+															<p class="featured-item-countdown-text">Seconds</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-new">
+							<h2 class="featured-title title">New Products</h2>
+							<div class="new-wrapper">
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/jacket-3.webp" type="image/webp"><img src="img/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/jacket-4.webp" type="image/webp"><img src="img/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" class="new-item-img hover"></picture>
+										<p class="new-item-badge">- 15%</p>
+										<div class="new-item-actions">
+
+											<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="starinit" viewBox="0 0 512 512">
+												<symbol id="heart" viewBox="0 0 512 512">
+													<path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+												</symbol>
+											</svg>
+
+											<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="starinit" viewBox="0 0 512 512">
+												<symbol id="eye" viewBox="0 0 512 512">
+													<path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+													<circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+												</symbol>
+											</svg>
+
+											<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="starinit" viewBox="0 0 512 512">
+												<symbol id="repeat" viewBox="0 0 512 512">
+													<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 120l48 48-48 48" />
+													<path d="M352 168H144a80.24 80.24 0 00-80 80v16M192 392l-48-48 48-48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+													<path d="M160 344h208a80.24 80.24 0 0080-80v-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+												</symbol>
+											</svg>
+
+											<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="starinit" viewBox="0 0 512 512">
+												<symbol id="add" viewBox="0 0 512 512">
+													<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 256v128M320 320H192M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zM160 176v-32a96 96 0 0196-96h0a96 96 0 0196 96v32" />
+												</symbol>
+											</svg>
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">jacket</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Mens Winter Leathers Jackets</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-half" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$48.00</p>
+											<p class="new-item-price-old">$75.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/shirt-1.webp" type="image/webp"><img src="img/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/shirt-2.webp" type="image/webp"><img src="img/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="new-item-img hover"></picture>
+										<p class="new-item-badge angle black">SALE</p>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">SHIRT</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Pure Garment Dyed Cotton Shirt</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$31.00</p>
+											<p class="new-item-price-old">$68.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/jacket-5.webp" type="image/webp"><img src="img/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/jacket-6.webp" type="image/webp"><img src="img/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="new-item-img hover"></picture>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">jacket</a>
+
+										<a href="#">
+											<h3 class="new-item-title">MEN Yarn Fleece Full-Zip Jacket</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-half" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$58.00</p>
+											<p class="new-item-price-old">$65.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/clothes-3.webp" type="image/webp"><img src="img/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/clothes-4.webp" type="image/webp"><img src="img/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt" class="new-item-img hover"></picture>
+										<p class="new-item-badge angle pink">NEW</p>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">SKIRT</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Black Floral Wrap Midi Skirt</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$25.00</p>
+											<p class="new-item-price-old">$35.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/shoe-2.webp" type="image/webp"><img src="img/products/shoe-2.jpg" alt="Casual Men's Brown shoes" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/shoe-2_1.webp" type="image/webp"><img src="img/products/shoe-2_1.jpg" alt="Casual Men's Brown shoes" class="new-item-img hover"></picture>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">CASUAL</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Casual Men's Brown shoes</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-half" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$95.00</p>
+											<p class="new-item-price-old">$105.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/watch-3.webp" type="image/webp"><img src="img/products/watch-3.jpg" alt="Pocket Watch Leather Pouch" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/watch-4.webp" type="image/webp"><img src="img/products/watch-4.jpg" alt="Pocket Watch Leather Pouch" class="new-item-img hover"></picture>
+										<p class="new-item-badge angle black">SALE</p>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">WATCHES</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Pocket Watch Leather Pouch</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$148.00</p>
+											<p class="new-item-price-old">$180.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/watch-1.webp" type="image/webp"><img src="img/products/watch-1.jpg" alt="Smart watche Vital Plus" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/watch-2.webp" type="image/webp"><img src="img/products/watch-2.jpg" alt="Smart watche Vital Plus" class="new-item-img hover"></picture>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">WATCHES</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Smart watche Vital Plus</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$118.00</p>
+											<p class="new-item-price-old">$130.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/party-wear-1.webp" type="image/webp"><img src="img/products/party-wear-1.jpg" alt="Womens Party Wear Shoes" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/party-wear-2.webp" type="image/webp"><img src="img/products/party-wear-2.jpg" alt="Womens Party Wear Shoes" class="new-item-img hover"></picture>
+										<p class="new-item-badge angle black">SALE</p>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">PARTY WEAR</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Womens Party Wear Shoes</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$30.00</p>
+											<p class="new-item-price-old">$55.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/jacket-1.webp" type="image/webp"><img src="img/products/jacket-1.jpg" alt="Mens Winter Leathers Jackets" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/jacket-2.webp" type="image/webp"><img src="img/products/jacket-2.jpg" alt="Mens Winter Leathers Jackets" class="new-item-img hover"></picture>
+										<p class="new-item-badge angle pink">NEW</p>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">jacket</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Mens Winter Leathers Jackets</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$40.00</p>
+											<p class="new-item-price-old">$45.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/sports-2.webp" type="image/webp"><img src="img/products/sports-2.jpg" alt="Trekking & Running Shoes - black" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/sports-4.webp" type="image/webp"><img src="img/products/sports-4.jpg" alt="Trekking & Running Shoes - black" class="new-item-img hover"></picture>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">SPORTS</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Trekking & Running Shoes - black</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$58.00</p>
+											<p class="new-item-price-old">$66.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/shoe-1.webp" type="image/webp"><img src="img/products/shoe-1.jpg" alt="Men's Leather Formal Wear shoes" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/shoe-1_1.webp" type="image/webp"><img src="img/products/shoe-1_1.jpg" alt="Men's Leather Formal Wear shoes" class="new-item-img hover"></picture>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">FORMAL</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Men's Leather Formal Wear shoes</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-half" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star-empty" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$51.00</p>
+											<p class="new-item-price-old">$55.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="new-item">
+									<div class="new-item-banner">
+										<picture><source srcset="img/products/shorts-1.webp" type="image/webp"><img src="img/products/shorts-1.jpg" alt="Better Basics French Terry Sweatshorts" class="new-item-img default"></picture>
+										<picture><source srcset="img/products/shorts-2.webp" type="image/webp"><img src="img/products/shorts-2.jpg" alt="Better Basics French Terry Sweatshorts" class="new-item-img hover"></picture>
+										<p class="new-item-badge angle black">SALE</p>
+										<div class="new-item-actions">
+
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#heart" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#eye" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#repeat" />
+												</svg>
+											</button>
+											<button class="new-item-action">
+												<svg class="new-item-icon">
+													<use href="#add" />
+												</svg>
+											</button>
+
+										</div>
+									</div>
+
+									<div class="new-item-content">
+
+										<a href="#" class="new-item-category">SHORTS</a>
+
+										<a href="#">
+											<h3 class="new-item-title">Better Basics French Terry Sweatshorts</h3>
+										</a>
+
+										<div class="new-item-rating">
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+											<svg class="new-item-star">
+												<use href="#star" />
+											</svg>
+										</div>
+
+										<div class="new-item-price">
+											<p class="new-item-price-new">$50.00</p>
+											<p class="new-item-price-old">$80.00</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="info">
+				<div class="info-container">
+					<div class="info-testimonial">
+						<h2 class="testimonial-title title">Testimonial</h2>
+						<div class="testimonial-item">
+							<picture><source srcset="img/testimonial-1.webp" type="image/webp"><img src="img/testimonial-1.jpg" alt="avatar" class="testimonial-item-avatar"></picture>
+							<p class="testimonial-item-name">ALAN DOE</p>
+							<p class="testimonial-item-descr">CEO & Founder Invision</p>
+							<img src="img/icons/quotes.svg" alt="quotation" class="testimonial-item-icon">
+							<p class="testimonial-item-text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.</p>
+						</div>
+					</div>
+					<div class="info-cta">
+						<picture><source srcset="img/cta-banner.webp" type="image/webp"><img src="img/cta-banner.jpg" alt="summer collection" class="cta-img"></picture>
+						<a href="#" class="cta-content">
+							<p class="cta-discount">25% Discount</p>
+							<h2 class="cta-title">Summer collection</h2>
+							<p class="cta-text">Starting from $10</p>
+							<p class="cta-more">Shop now</p>
+						</a>
+					</div>
+					<div class="info-services">
+						<h2 class="services-title title">Our Services</h2>
+						<div class="services-wrapper">
+							<a href="#" class="services-item">
+								<svg xmlns="http://www.w3.org/2000/svg" class="services-item-icon" viewBox="0 0 512 512">
+									<path d="M461.93 261.05c-2-4.76-6.71-7.83-11.67-9.49l-187.18-74.48a23.78 23.78 0 00-14.17 0l-187 74.52c-5 1.56-9.83 4.77-11.81 9.53s-2.94 9.37-1 15.08l46.53 119.15a7.46 7.46 0 007.47 4.64c26.69-1.68 50.31-15.23 68.38-32.5a7.66 7.66 0 0110.49 0C201.29 386 227 400 256 400s54.56-14 73.88-32.54a7.67 7.67 0 0110.5 0c18.07 17.28 41.69 30.86 68.38 32.54a7.45 7.45 0 007.46-4.61l46.7-119.16c1.98-4.78.99-10.41-.99-15.18z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+									<path d="M416 473.14a6.84 6.84 0 00-3.56-6c-27.08-14.55-51.77-36.82-62.63-48a10.05 10.05 0 00-12.72-1.51c-50.33 32.42-111.61 32.44-161.95.05a10.09 10.09 0 00-12.82 1.56c-10.77 11.28-35.19 33.3-62.43 47.75a7.15 7.15 0 00-3.89 5.73 6.73 6.73 0 007.92 7.15c20.85-4.18 41-13.68 60.2-23.83a8.71 8.71 0 018-.06A185.14 185.14 0 00340 456a8.82 8.82 0 018.09.06c19.1 10 39.22 19.59 60 23.8a6.72 6.72 0 007.95-6.71z" fill="currentColor" stroke="currentColor" />
+									<path d="M320 96V72a24.07 24.07 0 00-24-24h-80a24.07 24.07 0 00-24 24v24M416 233v-89a48.14 48.14 0 00-48-48H144a48.14 48.14 0 00-48 48v92M256 183.6v212.85" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								</svg>
+								<div class="services-item-details">
+									<h3 class="services-item-name">Worldwide Delivery</h3>
+									<p class="services-item-text">For Order Over $100</p>
+								</div>
+							</a>
+							<a href="#" class="services-item">
+								<svg xmlns="http://www.w3.org/2000/svg" class="services-item-icon" viewBox="0 0 512 512">
+									<path d="M461.81 53.81a4.4 4.4 0 00-3.3-3.39c-54.38-13.3-180 34.09-248.13 102.17a294.9 294.9 0 00-33.09 39.08c-21-1.9-42-.3-59.88 7.5-50.49 22.2-65.18 80.18-69.28 105.07a9 9 0 009.8 10.4l81.07-8.9a180.29 180.29 0 001.1 18.3 18.15 18.15 0 005.3 11.09l31.39 31.39a18.15 18.15 0 0011.1 5.3 179.91 179.91 0 0018.19 1.1l-8.89 81a9 9 0 0010.39 9.79c24.9-4 83-18.69 105.07-69.17 7.8-17.9 9.4-38.79 7.6-59.69a293.91 293.91 0 0039.19-33.09c68.38-68 115.47-190.86 102.37-247.95zM298.66 213.67a42.7 42.7 0 1160.38 0 42.65 42.65 0 01-60.38 0z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+									<path d="M109.64 352a45.06 45.06 0 00-26.35 12.84C65.67 382.52 64 448 64 448s65.52-1.67 83.15-19.31A44.73 44.73 0 00160 402.32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								</svg>
+								<div class="services-item-details">
+									<h3 class="services-item-name">Next Day Delivery</h3>
+									<p class="services-item-text">UK Orders Only</p>
+								</div>
+							</a>
+							<a href="#" class="services-item">
+								<svg xmlns="http://www.w3.org/2000/svg" class="services-item-icon" viewBox="0 0 512 512">
+									<path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+								</svg>
+								<div class="services-item-details">
+									<h3 class="services-item-name">Best Online Support</h3>
+									<p class="services-item-text">Hours: 8AM - 11PM</p>
+								</div>
+							</a>
+							<a href="#" class="services-item">
+								<svg xmlns="http://www.w3.org/2000/svg" class="services-item-icon" viewBox="0 0 512 512">
+									<path d="M240 424v-96c116.4 0 159.39 33.76 208 96 0-119.23-39.57-240-208-240V88L64 256z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+								</svg>
+								<div class="services-item-details">
+									<h3 class="services-item-name">Return Policy</h3>
+									<p class="services-item-text">Easy & Free Return</p>
+								</div>
+							</a>
+							<a href="#" class="services-item">
+								<svg xmlns="http://www.w3.org/2000/svg" class="services-item-icon" viewBox="0 0 512 512">
+									<path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M366.05 146a46.7 46.7 0 01-2.42-63.42 3.87 3.87 0 00-.22-5.26l-44.13-44.18a3.89 3.89 0 00-5.5 0l-70.34 70.34a23.62 23.62 0 00-5.71 9.24h0a23.66 23.66 0 01-14.95 15h0a23.7 23.7 0 00-9.25 5.71L33.14 313.78a3.89 3.89 0 000 5.5l44.13 44.13a3.87 3.87 0 005.26.22 46.69 46.69 0 0165.84 65.84 3.87 3.87 0 00.22 5.26l44.13 44.13a3.89 3.89 0 005.5 0l180.4-180.39a23.7 23.7 0 005.71-9.25h0a23.66 23.66 0 0114.95-15h0a23.62 23.62 0 009.24-5.71l70.34-70.34a3.89 3.89 0 000-5.5l-44.13-44.13a3.87 3.87 0 00-5.26-.22 46.7 46.7 0 01-63.42-2.32z" />
+									<path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" d="M250.5 140.44l-16.51-16.51M294.52 184.46l-11.01-11M338.54 228.49l-11-11.01M388.07 278.01l-16.51-16.51" />
+								</svg>
+								<div class="services-item-details">
+									<h3 class="services-item-name">30% Money Back</h3>
+									<p class="services-item-text">For Order Over $100</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blog">
+				<div class="blog-container">
+					<div class="blog-wrapper">
+						<div class="blog-item">
+							<a href="#">
+								<picture><source srcset="img/blog-1.webp" type="image/webp"><img src="img/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" class="blog-img"></picture>
+							</a>
+							<div class="blog-content">
+								<a href="#" class="blog-category">Fashion</a>
+								<a href="#">
+									<h3 class="blog-title">Clothes Retail KPIs 2021 Guide for Clothes Executives.</h3>
+								</a>
+								<p class="blog-meta">
+									By <cite>Mrs Fa</cite> / <time datetime="2023-04-10">Oct 04, 2023</time>
+								</p>
+							</div>
+						</div>
+						<div class="blog-item">
+							<a href="#">
+								<picture><source srcset="img/blog-2.webp" type="image/webp"><img src="img/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle." class="blog-img"></picture>
+							</a>
+							<div class="blog-content">
+								<a href="#" class="blog-category">Clothes</a>
+								<a href="#">
+									<h3 class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</h3>
+								</a>
+								<p class="blog-meta">
+									By <cite>Mr Robin</cite> / <time datetime="2023-01-18">Jan 18, 2023</time>
+								</p>
+							</div>
+						</div>
+						<div class="blog-item">
+							<a href="#">
+								<picture><source srcset="img/blog-3.webp" type="image/webp"><img src="img/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue." class="blog-img"></picture>
+							</a>
+							<div class="blog-content">
+								<a href="#" class="blog-category">Shoes</a>
+								<a href="#">
+									<h3 class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</h3>
+								</a>
+								<p class="blog-meta">
+									By <cite>Ms Salsa </cite> / <time datetime="2023-09-08">Aug 09, 2023</time>
+								</p>
+							</div>
+						</div>
+						<div class="blog-item">
+							<a href="#">
+								<picture><source srcset="img/blog-4.webp" type="image/webp"><img src="img/blog-4.jpg" alt="Gadget Queues: Mortal Kombat." class="blog-img"></picture>
+							</a>
+							<div class="blog-content">
+								<a href="#" class="blog-category">Electronics</a>
+								<a href="#">
+									<h3 class="blog-title">Gadget Queues: Let The Mortal Kombat Begin.</h3>
+								</a>
+								<p class="blog-meta">
+									By <cite>Mr Pawar </cite> / <time datetime="2023-15-09">Sep 15, 2023</time>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-category">
+				<div class="footer-category-container">
+					<h2 class="footer-category-title">Brand directory</h2>
+					<div class="footer-category-box">
+						<h3 class="footer-category-name">Fashion :</h3>
+						<a href="#" class="footer-category-link">T-shirt</a>
+						<a href="#" class="footer-category-link">Shirts</a>
+						<a href="#" class="footer-category-link">shorts & jeans</a>
+						<a href="#" class="footer-category-link">jacket</a>
+						<a href="#" class="footer-category-link">dress & frock</a>
+						<a href="#" class="footer-category-link">innerwear</a>
+						<a href="#" class="footer-category-link">hosiery</a>
+					</div>
+					<div class="footer-category-box">
+						<h3 class="footer-category-name">footwear :</h3>
+						<a href="#" class="footer-category-link">sport</a>
+						<a href="#" class="footer-category-link">formal</a>
+						<a href="#" class="footer-category-link">Boots</a>
+						<a href="#" class="footer-category-link">casual</a>
+						<a href="#" class="footer-category-link">cowboy shoes</a>
+						<a href="#" class="footer-category-link">safety shoes</a>
+						<a href="#" class="footer-category-link">Party wear shoes</a>
+						<a href="#" class="footer-category-link">Branded</a>
+						<a href="#" class="footer-category-link">Firstcopy</a>
+						<a href="#" class="footer-category-link">Long shoes</a>
+					</div>
+					<div class="footer-category-box">
+						<h3 class="footer-category-name">jewellery :</h3>
+						<a href="#" class="footer-category-link">Necklace</a>
+						<a href="#" class="footer-category-link">Earrings</a>
+						<a href="#" class="footer-category-link">Couple rings</a>
+						<a href="#" class="footer-category-link">Pendants</a>
+						<a href="#" class="footer-category-link">Crystal</a>
+						<a href="#" class="footer-category-link">Bangles</a>
+						<a href="#" class="footer-category-link">bracelets</a>
+						<a href="#" class="footer-category-link">nosepin</a>
+						<a href="#" class="footer-category-link">chain</a>
+						<a href="#" class="footer-category-link">Earrings</a>
+						<a href="#" class="footer-category-link">Couple rings</a>
+					</div>
+					<div class="footer-category-box">
+						<h3 class="footer-category-name">cosmetics:</h3>
+						<a href="#" class="footer-category-link">Shampoo</a>
+						<a href="#" class="footer-category-link">Bodywash</a>
+						<a href="#" class="footer-category-link">Facewash</a>
+						<a href="#" class="footer-category-link">makeup kit</a>
+						<a href="#" class="footer-category-link">liner</a>
+						<a href="#" class="footer-category-link">lipstick</a>
+						<a href="#" class="footer-category-link">prefume</a>
+						<a href="#" class="footer-category-link">Body soap</a>
+						<a href="#" class="footer-category-link">scrub</a>
+						<a href="#" class="footer-category-link">hair gel</a>
+						<a href="#" class="footer-category-link">hair colors</a>
+						<a href="#" class="footer-category-link">hair dye</a>
+						<a href="#" class="footer-category-link">sunscreen</a>
+						<a href="#" class="footer-category-link">skin loson</a>
+						<a href="#" class="footer-category-link">liner</a>
+						<a href="#" class="footer-category-link">lipstick</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-nav">
+				<div class="footer-nav-container">
+					<ul class="footer-nav-list">
+						<li class="footer-nav-item">
+							<h2 class="footer-nav-title">Popular Categories</h2>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Fashion</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Electronic</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Cosmetic</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Health</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Watches</a>
+						</li>
+					</ul>
+					<ul class="footer-nav-list">
+						<li class="footer-nav-item">
+							<h2 class="footer-nav-title">Products</h2>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Prices drop</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">New products</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Best sales</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Contact us</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Sitemap</a>
+						</li>
+					</ul>
+					<ul class="footer-nav-list">
+						<li class="footer-nav-item">
+							<h2 class="footer-nav-title">Our Company</h2>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Delivery</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Legal Notice</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Terms and conditions</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">About us</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Secure payment</a>
+						</li>
+					</ul>
+					<ul class="footer-nav-list">
+						<li class="footer-nav-item">
+							<h2 class="footer-nav-title">Services</h2>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Prices drop</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">New products</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Best sales</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Contact us</a>
+						</li>
+						<li class="footer-nav-item">
+							<a href="#" class="footer-nav-link">Sitemap</a>
+						</li>
+					</ul>
+					<ul class="footer-nav-list">
+						<li class="footer-nav-item">
+							<h2 class="footer-nav-title">Contact</h2>
+						</li>
+						<li class="footer-nav-item flex">
+							<img src="img/icons/location-outline.svg" alt="location" class="footer-nav-img">
+							<address class="content">
+								419 State 414 Rte
+								Beaver Dams, New York(NY), 14812, USA
+							</address>
+						</li>
+						<li class="footer-nav-item flex">
+							<img src="img/icons/call-outline.svg" alt="phone" class="footer-nav-img">
+							<a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+						</li>
+						<li class="footer-nav-item flex">
+							<img src="img/icons/mail-outline.svg" alt="email" class="footer-nav-img">
+							<a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+						</li>
+					</ul>
+					<ul class="footer-nav-list footer-nav-list-social">
+						<li class="footer-nav-item">
+							<h2 class="footer-nav-title">Follow Us</h2>
+						</li>
+						<li class="footer-nav-item">
+							<ul class="footer-nav-item flex">
+								<li>
+									<a href="#" class="footer-nav-social-link">
+										<svg xmlns="http://www.w3.org/2000/svg" class="footer-nav-social-icon" viewBox="0 0 512 512">
+											<path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="footer-nav-social-link">
+										<svg xmlns="http://www.w3.org/2000/svg" class="footer-nav-social-icon" viewBox="0 0 512 512">
+											<path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="footer-nav-social-link">
+										<svg xmlns="http://www.w3.org/2000/svg" class="footer-nav-social-icon" viewBox="0 0 512 512">
+											<path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+											<path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="footer-nav-social-link">
+										<svg xmlns="http://www.w3.org/2000/svg" class="footer-nav-social-icon" viewBox="0 0 512 512">
+											<path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-container">
+					<picture><source srcset="img/payment.webp" type="image/webp"><img src="img/payment.png" alt="payment method" class="footer-bottom-img"></picture>
+					<p class="footer-bottom-copyright">
+						Copyright &copy; <a href="#">Gshop</a> all rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231004111232"></script>
+</body>
+
+</html>
